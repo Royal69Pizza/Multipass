@@ -1,0 +1,12 @@
+C:\Users\royal\Desktop\Developpement\Cheddar Tsunami\Cheddar Tsunami\obj\Debug\Cheddar Tsunami.csproj.AssemblyReference.cache
+C:\Users\royal\Desktop\Developpement\Cheddar Tsunami\Cheddar Tsunami\obj\Debug\Cheddar Tsunami.csproj.SuggestedBindingRedirects.cache
+C:\Users\royal\Desktop\Developpement\Cheddar Tsunami\Cheddar Tsunami\obj\Debug\Cheddar Tsunami.csproj.GenerateResource.cache
+C:\Users\royal\Desktop\Developpement\Cheddar Tsunami\Cheddar Tsunami\obj\Debug\Cheddar Tsunami.csproj.CoreCompileInputs.cache
+C:\Users\royal\Desktop\Developpement\Cheddar Tsunami\Cheddar Tsunami\obj\Debug\Cheddar_Tsunami.Login.resources
+C:\Users\royal\Desktop\Developpement\Cheddar Tsunami\Cheddar Tsunami\obj\Debug\Cheddar_Tsunami.Main.resources
+C:\Users\royal\Desktop\Developpement\Cheddar Tsunami\Cheddar Tsunami\bin\Debug\Cheddar Tsunami.exe.config
+C:\Users\royal\Desktop\Developpement\Cheddar Tsunami\Cheddar Tsunami\bin\Debug\Cheddar Tsunami.exe
+C:\Users\royal\Desktop\Developpement\Cheddar Tsunami\Cheddar Tsunami\bin\Debug\Cheddar Tsunami.pdb
+C:\Users\royal\Desktop\Developpement\Cheddar Tsunami\Cheddar Tsunami\obj\Debug\Cheddar_Tsunami.Properties.Resources.resources
+C:\Users\royal\Desktop\Developpement\Cheddar Tsunami\Cheddar Tsunami\obj\Debug\Cheddar Tsunami.exe
+C:\Users\royal\Desktop\Developpement\Cheddar Tsunami\Cheddar Tsunami\obj\Debug\Cheddar Tsunami.pdb

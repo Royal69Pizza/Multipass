@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multipass", "Multipass.csproj", "{3B1914D1-5BD4-4E62-ABAF-2FB90042C962}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Multipass", "Multipass\Multipass\Multipass.vdproj", "{60E7B61F-3C6A-4BD3-9C1E-B1D5D4C60713}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B1914D1-5BD4-4E62-ABAF-2FB90042C962}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B1914D1-5BD4-4E62-ABAF-2FB90042C962}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B1914D1-5BD4-4E62-ABAF-2FB90042C962}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B1914D1-5BD4-4E62-ABAF-2FB90042C962}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60E7B61F-3C6A-4BD3-9C1E-B1D5D4C60713}.Debug|Any CPU.ActiveCfg = Debug
+		{60E7B61F-3C6A-4BD3-9C1E-B1D5D4C60713}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BDB0A94E-09D3-4FF4-8901-FD9451BC3301}
+	EndGlobalSection
+EndGlobal
