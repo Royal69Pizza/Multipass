@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelLogo = new System.Windows.Forms.Label();
             this.ButtonLogin = new System.Windows.Forms.Button();
             this.inputLogin = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.ButtonExitBeforeLogin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // labelLogo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Praetorian", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 27);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "MULTIPASS";
+            this.labelLogo.AutoSize = true;
+            this.labelLogo.Font = new System.Drawing.Font("Praetorian", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLogo.Location = new System.Drawing.Point(12, 9);
+            this.labelLogo.Name = "labelLogo";
+            this.labelLogo.Size = new System.Drawing.Size(178, 27);
+            this.labelLogo.TabIndex = 2;
+            this.labelLogo.Text = "MULTIPASS";
             // 
             // ButtonLogin
             // 
@@ -102,7 +102,7 @@
             this.Controls.Add(this.ButtonLogin);
             this.Controls.Add(this.inputLogin);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelLogo);
             this.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -117,7 +117,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelLogo;
         private System.Windows.Forms.Button ButtonLogin;
         private System.Windows.Forms.TextBox inputLogin;
         private System.Windows.Forms.Label label5;

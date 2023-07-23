@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.ListBoxOfPWD = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupeCreer = new System.Windows.Forms.GroupBox();
+            this.labelLogo = new System.Windows.Forms.Label();
+            this.createBox = new System.Windows.Forms.GroupBox();
             this.ButtonCreate = new System.Windows.Forms.Button();
             this.inputCreateName = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -39,17 +39,20 @@
             this.inputCreateID = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.editBox = new System.Windows.Forms.GroupBox();
             this.inputEditPWD = new System.Windows.Forms.TextBox();
             this.inputEditID = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.ButtonEdit = new System.Windows.Forms.Button();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.Custom = new System.Windows.Forms.RadioButton();
+            this.generateBox = new System.Windows.Forms.GroupBox();
+            this.RAGE = new System.Windows.Forms.RadioButton();
+            this.RoyalPass = new System.Windows.Forms.RadioButton();
+            this.PSEC = new System.Windows.Forms.RadioButton();
+            this.MetalMatrix = new System.Windows.Forms.RadioButton();
             this.ButtonGenerate = new System.Windows.Forms.Button();
             this.inputGenPwd = new System.Windows.Forms.TextBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.exportBox = new System.Windows.Forms.GroupBox();
             this.textExport = new System.Windows.Forms.Label();
             this.TXT = new System.Windows.Forms.RadioButton();
             this.BIN = new System.Windows.Forms.RadioButton();
@@ -57,7 +60,7 @@
             this.ButtonExport = new System.Windows.Forms.Button();
             this.inputPath = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.infoBox = new System.Windows.Forms.GroupBox();
             this.textCopy = new System.Windows.Forms.Label();
             this.InputSearchPWD = new System.Windows.Forms.TextBox();
             this.InputSearchID = new System.Windows.Forms.TextBox();
@@ -66,13 +69,16 @@
             this.ButtonDelete = new System.Windows.Forms.Button();
             this.ButtonExit = new System.Windows.Forms.Button();
             this.CheckBoxShowPassword = new System.Windows.Forms.CheckBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupeCreer.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.optionsBox = new System.Windows.Forms.GroupBox();
+            this.searchBox = new System.Windows.Forms.GroupBox();
+            this.InputSearch = new System.Windows.Forms.TextBox();
+            this.createBox.SuspendLayout();
+            this.editBox.SuspendLayout();
+            this.generateBox.SuspendLayout();
+            this.exportBox.SuspendLayout();
+            this.infoBox.SuspendLayout();
+            this.optionsBox.SuspendLayout();
+            this.searchBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // ListBoxOfPWD
@@ -81,39 +87,39 @@
             this.ListBoxOfPWD.ForeColor = System.Drawing.Color.White;
             this.ListBoxOfPWD.FormattingEnabled = true;
             this.ListBoxOfPWD.ItemHeight = 18;
-            this.ListBoxOfPWD.Location = new System.Drawing.Point(12, 40);
+            this.ListBoxOfPWD.Location = new System.Drawing.Point(12, 112);
             this.ListBoxOfPWD.Name = "ListBoxOfPWD";
-            this.ListBoxOfPWD.Size = new System.Drawing.Size(195, 436);
+            this.ListBoxOfPWD.Size = new System.Drawing.Size(284, 364);
             this.ListBoxOfPWD.TabIndex = 0;
             this.ListBoxOfPWD.SelectedIndexChanged += new System.EventHandler(this.ListBoxOfPWD_SelectedIndexChanged);
             // 
-            // label1
+            // labelLogo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Praetorian", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(7, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 27);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "MULTIPASS";
+            this.labelLogo.AutoSize = true;
+            this.labelLogo.Font = new System.Drawing.Font("Praetorian", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLogo.Location = new System.Drawing.Point(7, 9);
+            this.labelLogo.Name = "labelLogo";
+            this.labelLogo.Size = new System.Drawing.Size(178, 27);
+            this.labelLogo.TabIndex = 1;
+            this.labelLogo.Text = "MULTIPASS";
             // 
-            // groupeCreer
+            // createBox
             // 
-            this.groupeCreer.Controls.Add(this.ButtonCreate);
-            this.groupeCreer.Controls.Add(this.inputCreateName);
-            this.groupeCreer.Controls.Add(this.label7);
-            this.groupeCreer.Controls.Add(this.inputCreatePWD);
-            this.groupeCreer.Controls.Add(this.inputCreateID);
-            this.groupeCreer.Controls.Add(this.label5);
-            this.groupeCreer.Controls.Add(this.label6);
-            this.groupeCreer.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupeCreer.ForeColor = System.Drawing.Color.White;
-            this.groupeCreer.Location = new System.Drawing.Point(213, 155);
-            this.groupeCreer.Name = "groupeCreer";
-            this.groupeCreer.Size = new System.Drawing.Size(284, 149);
-            this.groupeCreer.TabIndex = 5;
-            this.groupeCreer.TabStop = false;
-            this.groupeCreer.Text = "Create";
+            this.createBox.Controls.Add(this.ButtonCreate);
+            this.createBox.Controls.Add(this.inputCreateName);
+            this.createBox.Controls.Add(this.label7);
+            this.createBox.Controls.Add(this.inputCreatePWD);
+            this.createBox.Controls.Add(this.inputCreateID);
+            this.createBox.Controls.Add(this.label5);
+            this.createBox.Controls.Add(this.label6);
+            this.createBox.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.createBox.ForeColor = System.Drawing.Color.White;
+            this.createBox.Location = new System.Drawing.Point(302, 157);
+            this.createBox.Name = "createBox";
+            this.createBox.Size = new System.Drawing.Size(284, 149);
+            this.createBox.TabIndex = 5;
+            this.createBox.TabStop = false;
+            this.createBox.Text = "Create";
             // 
             // ButtonCreate
             // 
@@ -186,21 +192,21 @@
             this.label6.TabIndex = 6;
             this.label6.Text = "ID";
             // 
-            // groupBox2
+            // editBox
             // 
-            this.groupBox2.Controls.Add(this.inputEditPWD);
-            this.groupBox2.Controls.Add(this.inputEditID);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.ButtonEdit);
-            this.groupBox2.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(213, 310);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(284, 118);
-            this.groupBox2.TabIndex = 9;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "EDIT";
+            this.editBox.Controls.Add(this.inputEditPWD);
+            this.editBox.Controls.Add(this.inputEditID);
+            this.editBox.Controls.Add(this.label4);
+            this.editBox.Controls.Add(this.label8);
+            this.editBox.Controls.Add(this.ButtonEdit);
+            this.editBox.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editBox.ForeColor = System.Drawing.Color.White;
+            this.editBox.Location = new System.Drawing.Point(302, 312);
+            this.editBox.Name = "editBox";
+            this.editBox.Size = new System.Drawing.Size(284, 118);
+            this.editBox.TabIndex = 9;
+            this.editBox.TabStop = false;
+            this.editBox.Text = "EDIT";
             // 
             // inputEditPWD
             // 
@@ -254,37 +260,76 @@
             this.ButtonEdit.UseVisualStyleBackColor = false;
             this.ButtonEdit.Click += new System.EventHandler(this.ButtonEdit_Click);
             // 
-            // groupBox4
+            // generateBox
             // 
-            this.groupBox4.Controls.Add(this.Custom);
-            this.groupBox4.Controls.Add(this.ButtonGenerate);
-            this.groupBox4.Controls.Add(this.inputGenPwd);
-            this.groupBox4.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.ForeColor = System.Drawing.Color.White;
-            this.groupBox4.Location = new System.Drawing.Point(503, 40);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(284, 192);
-            this.groupBox4.TabIndex = 11;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "GENERATE";
+            this.generateBox.Controls.Add(this.RAGE);
+            this.generateBox.Controls.Add(this.RoyalPass);
+            this.generateBox.Controls.Add(this.PSEC);
+            this.generateBox.Controls.Add(this.MetalMatrix);
+            this.generateBox.Controls.Add(this.ButtonGenerate);
+            this.generateBox.Controls.Add(this.inputGenPwd);
+            this.generateBox.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.generateBox.ForeColor = System.Drawing.Color.White;
+            this.generateBox.Location = new System.Drawing.Point(592, 42);
+            this.generateBox.Name = "generateBox";
+            this.generateBox.Size = new System.Drawing.Size(284, 192);
+            this.generateBox.TabIndex = 11;
+            this.generateBox.TabStop = false;
+            this.generateBox.Text = "GENERATE";
             // 
-            // Custom
+            // RAGE
             // 
-            this.Custom.AutoSize = true;
-            this.Custom.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Custom.Location = new System.Drawing.Point(9, 53);
-            this.Custom.Name = "Custom";
-            this.Custom.Size = new System.Drawing.Size(182, 22);
-            this.Custom.TabIndex = 20;
-            this.Custom.TabStop = true;
-            this.Custom.Text = "Custom your generator";
-            this.Custom.UseVisualStyleBackColor = true;
+            this.RAGE.AutoSize = true;
+            this.RAGE.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RAGE.Location = new System.Drawing.Point(9, 53);
+            this.RAGE.Name = "RAGE";
+            this.RAGE.Size = new System.Drawing.Size(89, 22);
+            this.RAGE.TabIndex = 23;
+            this.RAGE.TabStop = true;
+            this.RAGE.Text = "RAGE ☢";
+            this.RAGE.UseVisualStyleBackColor = true;
+            // 
+            // RoyalPass
+            // 
+            this.RoyalPass.AutoSize = true;
+            this.RoyalPass.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RoyalPass.Location = new System.Drawing.Point(9, 128);
+            this.RoyalPass.Name = "RoyalPass";
+            this.RoyalPass.Size = new System.Drawing.Size(116, 22);
+            this.RoyalPass.TabIndex = 22;
+            this.RoyalPass.TabStop = true;
+            this.RoyalPass.Text = "RoyalPass ♛";
+            this.RoyalPass.UseVisualStyleBackColor = true;
+            // 
+            // PSEC
+            // 
+            this.PSEC.AutoSize = true;
+            this.PSEC.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PSEC.Location = new System.Drawing.Point(9, 103);
+            this.PSEC.Name = "PSEC";
+            this.PSEC.Size = new System.Drawing.Size(87, 22);
+            this.PSEC.TabIndex = 21;
+            this.PSEC.TabStop = true;
+            this.PSEC.Text = "PSEC 🔒";
+            this.PSEC.UseVisualStyleBackColor = true;
+            // 
+            // MetalMatrix
+            // 
+            this.MetalMatrix.AutoSize = true;
+            this.MetalMatrix.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MetalMatrix.Location = new System.Drawing.Point(9, 78);
+            this.MetalMatrix.Name = "MetalMatrix";
+            this.MetalMatrix.Size = new System.Drawing.Size(128, 22);
+            this.MetalMatrix.TabIndex = 20;
+            this.MetalMatrix.TabStop = true;
+            this.MetalMatrix.Text = "Metal Matrix ◈";
+            this.MetalMatrix.UseVisualStyleBackColor = true;
             // 
             // ButtonGenerate
             // 
             this.ButtonGenerate.BackColor = System.Drawing.Color.Green;
             this.ButtonGenerate.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonGenerate.Location = new System.Drawing.Point(6, 159);
+            this.ButtonGenerate.Location = new System.Drawing.Point(6, 160);
             this.ButtonGenerate.Name = "ButtonGenerate";
             this.ButtonGenerate.Size = new System.Drawing.Size(272, 26);
             this.ButtonGenerate.TabIndex = 19;
@@ -302,23 +347,23 @@
             this.inputGenPwd.Size = new System.Drawing.Size(269, 26);
             this.inputGenPwd.TabIndex = 17;
             // 
-            // groupBox6
+            // exportBox
             // 
-            this.groupBox6.Controls.Add(this.textExport);
-            this.groupBox6.Controls.Add(this.TXT);
-            this.groupBox6.Controls.Add(this.BIN);
-            this.groupBox6.Controls.Add(this.ButtonSelectPath);
-            this.groupBox6.Controls.Add(this.ButtonExport);
-            this.groupBox6.Controls.Add(this.inputPath);
-            this.groupBox6.Controls.Add(this.label12);
-            this.groupBox6.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox6.ForeColor = System.Drawing.Color.White;
-            this.groupBox6.Location = new System.Drawing.Point(503, 238);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(284, 163);
-            this.groupBox6.TabIndex = 12;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "EXPORT";
+            this.exportBox.Controls.Add(this.textExport);
+            this.exportBox.Controls.Add(this.TXT);
+            this.exportBox.Controls.Add(this.BIN);
+            this.exportBox.Controls.Add(this.ButtonSelectPath);
+            this.exportBox.Controls.Add(this.ButtonExport);
+            this.exportBox.Controls.Add(this.inputPath);
+            this.exportBox.Controls.Add(this.label12);
+            this.exportBox.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exportBox.ForeColor = System.Drawing.Color.White;
+            this.exportBox.Location = new System.Drawing.Point(592, 240);
+            this.exportBox.Name = "exportBox";
+            this.exportBox.Size = new System.Drawing.Size(284, 163);
+            this.exportBox.TabIndex = 12;
+            this.exportBox.TabStop = false;
+            this.exportBox.Text = "EXPORT";
             // 
             // textExport
             // 
@@ -397,21 +442,21 @@
             this.label12.TabIndex = 22;
             this.label12.Text = "Path";
             // 
-            // groupBox1
+            // infoBox
             // 
-            this.groupBox1.Controls.Add(this.textCopy);
-            this.groupBox1.Controls.Add(this.InputSearchPWD);
-            this.groupBox1.Controls.Add(this.InputSearchID);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(213, 40);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(284, 109);
-            this.groupBox1.TabIndex = 13;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Info";
+            this.infoBox.Controls.Add(this.textCopy);
+            this.infoBox.Controls.Add(this.InputSearchPWD);
+            this.infoBox.Controls.Add(this.InputSearchID);
+            this.infoBox.Controls.Add(this.label3);
+            this.infoBox.Controls.Add(this.label9);
+            this.infoBox.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.infoBox.ForeColor = System.Drawing.Color.White;
+            this.infoBox.Location = new System.Drawing.Point(302, 42);
+            this.infoBox.Name = "infoBox";
+            this.infoBox.Size = new System.Drawing.Size(284, 109);
+            this.infoBox.TabIndex = 13;
+            this.infoBox.TabStop = false;
+            this.infoBox.Text = "Info";
             // 
             // textCopy
             // 
@@ -432,6 +477,7 @@
             this.InputSearchPWD.Location = new System.Drawing.Point(84, 53);
             this.InputSearchPWD.Name = "InputSearchPWD";
             this.InputSearchPWD.PasswordChar = '∎';
+            this.InputSearchPWD.ReadOnly = true;
             this.InputSearchPWD.Size = new System.Drawing.Size(194, 26);
             this.InputSearchPWD.TabIndex = 9;
             this.InputSearchPWD.Click += new System.EventHandler(this.InputSearchPWD_Click);
@@ -472,7 +518,7 @@
             // 
             this.ButtonDelete.BackColor = System.Drawing.Color.Maroon;
             this.ButtonDelete.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonDelete.Location = new System.Drawing.Point(219, 434);
+            this.ButtonDelete.Location = new System.Drawing.Point(308, 436);
             this.ButtonDelete.Name = "ButtonDelete";
             this.ButtonDelete.Size = new System.Drawing.Size(272, 26);
             this.ButtonDelete.TabIndex = 20;
@@ -484,7 +530,7 @@
             // 
             this.ButtonExit.BackColor = System.Drawing.Color.Maroon;
             this.ButtonExit.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonExit.Location = new System.Drawing.Point(723, 10);
+            this.ButtonExit.Location = new System.Drawing.Point(812, 12);
             this.ButtonExit.Name = "ButtonExit";
             this.ButtonExit.Size = new System.Drawing.Size(64, 26);
             this.ButtonExit.TabIndex = 21;
@@ -504,33 +550,57 @@
             this.CheckBoxShowPassword.UseVisualStyleBackColor = true;
             this.CheckBoxShowPassword.CheckedChanged += new System.EventHandler(this.CheckBoxShowPassword_CheckedChanged);
             // 
-            // groupBox3
+            // optionsBox
             // 
-            this.groupBox3.Controls.Add(this.CheckBoxShowPassword);
-            this.groupBox3.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Location = new System.Drawing.Point(503, 407);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(284, 53);
-            this.groupBox3.TabIndex = 23;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Options";
+            this.optionsBox.Controls.Add(this.CheckBoxShowPassword);
+            this.optionsBox.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optionsBox.ForeColor = System.Drawing.Color.White;
+            this.optionsBox.Location = new System.Drawing.Point(592, 409);
+            this.optionsBox.Name = "optionsBox";
+            this.optionsBox.Size = new System.Drawing.Size(284, 53);
+            this.optionsBox.TabIndex = 23;
+            this.optionsBox.TabStop = false;
+            this.optionsBox.Text = "Options";
+            // 
+            // searchBox
+            // 
+            this.searchBox.Controls.Add(this.InputSearch);
+            this.searchBox.Font = new System.Drawing.Font("Omega Flight Title", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchBox.ForeColor = System.Drawing.Color.White;
+            this.searchBox.Location = new System.Drawing.Point(12, 42);
+            this.searchBox.Name = "searchBox";
+            this.searchBox.Size = new System.Drawing.Size(284, 57);
+            this.searchBox.TabIndex = 24;
+            this.searchBox.TabStop = false;
+            this.searchBox.Text = "Search";
+            // 
+            // InputSearch
+            // 
+            this.InputSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.InputSearch.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InputSearch.ForeColor = System.Drawing.Color.White;
+            this.InputSearch.Location = new System.Drawing.Point(6, 21);
+            this.InputSearch.Name = "InputSearch";
+            this.InputSearch.Size = new System.Drawing.Size(272, 26);
+            this.InputSearch.TabIndex = 8;
+            this.InputSearch.TextChanged += new System.EventHandler(this.InputSearch_TextChanged);
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(799, 471);
-            this.Controls.Add(this.groupBox3);
+            this.ClientSize = new System.Drawing.Size(887, 471);
+            this.Controls.Add(this.searchBox);
+            this.Controls.Add(this.optionsBox);
             this.Controls.Add(this.ButtonExit);
             this.Controls.Add(this.ButtonDelete);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.groupBox6);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupeCreer);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.infoBox);
+            this.Controls.Add(this.exportBox);
+            this.Controls.Add(this.generateBox);
+            this.Controls.Add(this.editBox);
+            this.Controls.Add(this.createBox);
+            this.Controls.Add(this.labelLogo);
             this.Controls.Add(this.ListBoxOfPWD);
             this.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
@@ -539,18 +609,20 @@
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MULTIPASS";
-            this.groupeCreer.ResumeLayout(false);
-            this.groupeCreer.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.createBox.ResumeLayout(false);
+            this.createBox.PerformLayout();
+            this.editBox.ResumeLayout(false);
+            this.editBox.PerformLayout();
+            this.generateBox.ResumeLayout(false);
+            this.generateBox.PerformLayout();
+            this.exportBox.ResumeLayout(false);
+            this.exportBox.PerformLayout();
+            this.infoBox.ResumeLayout(false);
+            this.infoBox.PerformLayout();
+            this.optionsBox.ResumeLayout(false);
+            this.optionsBox.PerformLayout();
+            this.searchBox.ResumeLayout(false);
+            this.searchBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -559,8 +631,8 @@
         #endregion
 
         private System.Windows.Forms.ListBox ListBoxOfPWD;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupeCreer;
+        private System.Windows.Forms.Label labelLogo;
+        private System.Windows.Forms.GroupBox createBox;
         private System.Windows.Forms.Button ButtonCreate;
         private System.Windows.Forms.TextBox inputCreateName;
         private System.Windows.Forms.Label label7;
@@ -568,15 +640,15 @@
         private System.Windows.Forms.TextBox inputCreateID;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox editBox;
         private System.Windows.Forms.Button ButtonEdit;
-        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox generateBox;
         private System.Windows.Forms.Button ButtonGenerate;
         private System.Windows.Forms.TextBox inputGenPwd;
-        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.GroupBox exportBox;
         private System.Windows.Forms.TextBox inputPath;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox infoBox;
         private System.Windows.Forms.TextBox InputSearchPWD;
         private System.Windows.Forms.TextBox InputSearchID;
         private System.Windows.Forms.Label label3;
@@ -588,14 +660,19 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button ButtonSelectPath;
-        private System.Windows.Forms.RadioButton Custom;
+        private System.Windows.Forms.RadioButton PSEC;
+        private System.Windows.Forms.RadioButton MetalMatrix;
+        private System.Windows.Forms.RadioButton RoyalPass;
         private System.Windows.Forms.RadioButton TXT;
         private System.Windows.Forms.RadioButton BIN;
         private System.Windows.Forms.Button ButtonExit;
         private System.Windows.Forms.Label textCopy;
         private System.Windows.Forms.Label textExport;
         private System.Windows.Forms.CheckBox CheckBoxShowPassword;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox optionsBox;
+        private System.Windows.Forms.RadioButton RAGE;
+        private System.Windows.Forms.GroupBox searchBox;
+        private System.Windows.Forms.TextBox InputSearch;
     }
 }
 

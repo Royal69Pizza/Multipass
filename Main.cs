@@ -1,12 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing.Text;
+using System.Drawing;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Windows.Forms;
+using System.Linq;
 
 namespace Multipass
 {
+
     public partial class Main : Form
     {
         /**| Fichier à serializer |**/
@@ -28,11 +32,40 @@ namespace Multipass
             /**| Préremplit le path de sauvegarde |**/
             inputPath.Text = "C:\\";
 
-            /**| Auto-check la generation MetalMatrix |**/
-            Custom.Checked = true;
+            /**| Auto-check la generation rage |**/
+            RAGE.Checked = true;
 
             /**| Auto-check l'export en BIN |**/
             BIN.Checked = true;
+
+
+            /**| Collection des Polices |**/
+            PrivateFontCollection AllFonts = new PrivateFontCollection();
+
+            /**| Chemin du projet |**/
+            string rootPath = Environment.CurrentDirectory;
+
+            /**| Ajout des polices|**/
+            AllFonts.AddFontFile(rootPath + "\\praetorian.ttf");
+            AllFonts.AddFontFile(rootPath + "\\omegaflighttitle.ttf");
+
+            /**| Applique les polices|**/
+            labelLogo.Font = new Font(AllFonts.Families[1], 13, FontStyle.Regular);
+
+            searchBox.Font = new Font(AllFonts.Families[0], 9, FontStyle.Regular);
+            infoBox.Font = new Font(AllFonts.Families[0], 9, FontStyle.Regular);
+            createBox.Font = new Font(AllFonts.Families[0], 9, FontStyle.Regular);
+            editBox.Font = new Font(AllFonts.Families[0], 9, FontStyle.Regular);
+            generateBox.Font = new Font(AllFonts.Families[0], 9, FontStyle.Regular);
+            exportBox.Font = new Font(AllFonts.Families[0], 9, FontStyle.Regular);
+            optionsBox.Font = new Font(AllFonts.Families[0], 9, FontStyle.Regular);
+
+            ButtonCreate.Font = new Font(AllFonts.Families[0], 9, FontStyle.Regular);
+            ButtonEdit.Font = new Font(AllFonts.Families[0], 9, FontStyle.Regular);
+            ButtonDelete.Font = new Font(AllFonts.Families[0], 9, FontStyle.Regular);
+            ButtonGenerate.Font = new Font(AllFonts.Families[0], 9, FontStyle.Regular);
+            ButtonExport.Font = new Font(AllFonts.Families[0], 9, FontStyle.Regular);
+            ButtonExit.Font = new Font(AllFonts.Families[0], 9, FontStyle.Regular);
         }
 
         /**| Affiche tous les mots de passe dans la ListBox |**/
@@ -158,9 +191,21 @@ namespace Multipass
 
         private void ButtonGenerate_Click(object sender, EventArgs e)
         {
-            if (Custom.Checked)
+            if (RAGE.Checked)
             {
-                inputGenPwd.Text = "Your custom generator";
+                inputGenPwd.Text = "your generator";
+            }
+            if (MetalMatrix.Checked)
+            {
+                inputGenPwd.Text = "your generator";
+            }
+            if (PSEC.Checked)
+            {
+                inputGenPwd.Text = "your generator";
+            }
+            if (RoyalPass.Checked)
+            {
+                inputGenPwd.Text = "your generator";
             }
         }
 
@@ -287,6 +332,31 @@ namespace Multipass
             } else {
                 InputSearchPWD.PasswordChar = '∎';
                 inputEditPWD.PasswordChar = '∎';
+            }
+        }
+
+        private void InputSearch_TextChanged(object sender, EventArgs e)
+        {
+            /*for (int i = 0; i < ListBoxOfPWD.Items.Count; ++i)
+            {
+                string lbString = ListBoxOfPWD.Items[i].ToString();
+                if (lbString.Contains(InputSearch.Text))
+                    return i;
+            }
+            return -1;*/
+
+            ListBoxOfPWD.Items.Clear();
+
+            foreach (Password pwd in passwordList)
+            {
+                /**| String de l'objet à afficher |**/
+                ListBoxOfPWD.DisplayMember = "name";
+
+                if (pwd.Name.Contains(InputSearch.Text))
+                {
+                    /**| Ajoute à la ListBox l'objet |**/
+                    ListBoxOfPWD.Items.Add(new Password(pwd.Name, pwd.ID, pwd.PWD));
+                }
             }
         }
     }
